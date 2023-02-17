@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queen-Visualizer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2>
+            N-Queens-Visualizer<i class="fas fa-crown" style="color:white"></i>
+        </h2>
+    </header>
+    <div class="n-queen">
+        <div class="input-box">
+            <input type="number" class="number-box" id="number-box" required />
+            <label>Enter Total Queens</label>
+        </div>
+        <div class="slider-container">
+            <input type="range" class="slider" id="slider" min="0" max="100" value="50">
+            <div id="progress-bar"></div>
+        </div>
+        <button class="play-button" id="play-button">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="queen-arrangement" id="queen-arrangement">
+        <!-- <p class="queen-info">For 4 X 4 board, Two arrangements are possible.</p> -->
+    </div>
+    <div id="n-queen-board">
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
